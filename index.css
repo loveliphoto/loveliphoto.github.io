@@ -181,15 +181,6 @@ input:focus, textarea:focus {
 	background-color: white;
 }
 
-footer {
-	position: absolute;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	color: #F4AFA8;
-	background-color: #3E3E3E;
-}
-
 #contactPage {
 	position: relative;
 	height: 100vh;
@@ -201,9 +192,11 @@ footer {
 }
 
 #contactForm > input {
-	width: 25vw;
+	width: 30vw;
 	margin-top: 0.8vw;
 	padding: 0.5vw;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 16px;
 }
 
 #contactForm > input[type="text"] {
@@ -211,14 +204,16 @@ footer {
 }
 
 #contactForm > textarea {
-	width: 25vw;
+	width: 30vw;
 	margin-top: 0.8vw;
 	padding: 0.5vw;
 	border: none;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 16px;
 }
 
 #contactForm > div {
-	width: 25vw;
+	width: 30vw;
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-between;
@@ -226,13 +221,26 @@ footer {
 }
 
 #contactForm > div > input {
-	width: 12.1vw;
+	width: 14.6vw;
 	padding: 0.5vw;
 	border: none;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 16px;
 }
 
 #submitButton {
 	opacity: transparent;
 	background: transparent;
 	border: thick solid white;
+}
+
+footer {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 0.5vw;
+	color: #F4AFA8;
+	background-color: #3E3E3E;
+	font-size: 12px;
 }
