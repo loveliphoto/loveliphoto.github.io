@@ -39,9 +39,20 @@ p {
 	margin: 0;
 }
 
+img {
+	display: block;
+}
+
 .flexBoxColCenter {
 	display: flex;
 	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.flexBoxRowCenter {
+	display: flex;
+	flex-flow: row wrap;
 	justify-content: center;
 	align-items: center;
 }
@@ -109,12 +120,12 @@ p {
 }
 
 #fourPictures > div {
-	height: 50%;
 	width: 100%;
 }
 
 .smallPicture {
-	width: 15vw;
+	width: 17vw;
+	padding: 1.2vw;
 }
 
 .parallax {
