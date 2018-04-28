@@ -136,7 +136,19 @@ input:focus, textarea:focus {
 
 .smallPicture {
 	width: 17vw;
-	padding: 1.2vw;
+	margin: 1.2vw;
+}
+
+.largePicture {
+	width: 25vw;
+	margin: 2vw;
+}
+
+.textOverImg > h3 {
+	margin: 0;
+	padding: 1vw;
+	font-size: 3vw;
+	background-color: white;
 }
 
 .parallax {
