@@ -1,0 +1,178 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+	height: 100vh;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	min-height: 100vh;
+	padding: 0;
+	margin: 0;
+	font-family: 'Quicksand', sans-serif;
+	font-size: 24px;
+    color: #3E3E3E;
+    text-align: justify;
+}
+
+h1 {
+    font-size: 80px;
+    text-align: center;
+    font-family: 'Clicker Script', cursive;
+    color: #F4AFA8;
+}
+
+#headerImg {
+	height: 100vh;
+	width: 100%;
+	background-image: url("wedding.jpg");
+	background-size: cover;
+	text-align: center;
+}
+
+#headerImg > .downButton {
+	position: absolute;
+	top: 90%;
+	left: 50%;
+}
+
+.downButton > img {
+	position: relative;
+	width: 50px;
+	top: 90%;
+}
+
+#nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	opacity: transparent;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0px;
+	width: 100%;
+	z-index: 1;
+}
+
+#nav > a {
+	color: white;
+	padding: 14px 16px;
+	text-align: center;
+}
+
+#home {
+	background-color: #F4AFA8;
+}
+
+#about {
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+	align-items: center;
+	border: solid blue;
+}
+
+#about > div {
+	height: 100vh;
+	border: solid red;
+	width: 40%;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+}
+
+#fourPictures > div {
+	height: 50%;
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-evenly;
+	align-items: center;
+	border: solid green;
+}
+
+.smallPicture {
+	width: 15vw;
+}
+
+.parallax {
+	height: 100vh;
+	background-attachment: fixed;
+	background-size: cover;
+	position: relative;
+	border: solid purple
+}
+
+#portfolio {
+	background-image: url("engagement.jpg");
+	text-align: center;
+}
+
+#section {
+	height: 100vh;
+	text-align: center;
+}
+
+
+#parallax {
+	background-image: url("1.jpg");
+	text-align: center;
+}
+
+.parallax > div {
+	position: absolute;
+	top: 70%;
+	color: #F4AFA8;
+	font-size: 50px;
+	margin: 0;
+	padding: 0;
+}
+
+h2 {
+	margin: 0;
+	padding: 0;
+	background-color: white;
+	border: solid yellow;
+	color: #F4AFA8;
+}
+
+footer {
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	color: #F4AFA8;
+}
+
+footer > p {
+	margin: 0;
+	bottom: 0%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	border: solid green;
+	background-color: #3E3E3E;
+}
+
+.imgDiv {
+	position: relative;
+	border: solid blue;
+	text-align: center;
+}
+
+.imgDiv > p {
+	position: absolute;
+	top: 50%;
+	margin: auto;
+	padding: 0;
+	left: 0;
+	right: 0;
+	border: solid orange;
+	background-color: white;
+}
