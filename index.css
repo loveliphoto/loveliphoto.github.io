@@ -39,6 +39,10 @@ p {
 	margin: 0;
 }
 
+a {
+	color: black;
+}
+
 img {
 	display: block;
 }
@@ -142,12 +146,12 @@ input:focus, textarea:focus {
 	position: relative;
 }
 
-#portfolio {
+#section {
 	background-image: url("engagement.jpg");
 	text-align: center;
 }
 
-#section {
+#portfolio {
 	height: 100vh;
 	text-align: center;
 	position: relative;
