@@ -71,16 +71,19 @@ img {
 	background-size: cover;
 }
 
-#headerImg > .downButton {
+.downButton {
 	position: absolute;
-	top: 90%;
-	left: 50%;
+	right: 0;
+	bottom: 5%;
+	left: 0;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
 }
 
-.downButton > img {
-	position: relative;
+.downButtonImg {
 	width: 50px;
-	top: 90%;
 }
 
 #nav {
@@ -90,7 +93,7 @@ img {
 	opacity: transparent;
 	position: -webkit-sticky;
 	position: sticky;
-	top: 0px;
+	top: 0;
 	width: 100%;
 	z-index: 1;
 }
@@ -143,6 +146,7 @@ img {
 #section {
 	height: 100vh;
 	text-align: center;
+	position: relative;
 }
 
 #parallax {
@@ -160,6 +164,10 @@ img {
 	right: 0;
 	bottom: 0;
 	left: 0;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
 }
 
 .textOverImg > p {
