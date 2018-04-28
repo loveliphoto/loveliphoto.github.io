@@ -43,6 +43,10 @@ img {
 	display: block;
 }
 
+input:focus, textarea:focus {
+    outline: none;
+}
+
 .flexBoxColCenter {
 	display: flex;
 	flex-flow: column nowrap;
