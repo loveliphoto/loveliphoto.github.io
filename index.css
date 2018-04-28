@@ -185,3 +185,50 @@ footer {
 	color: #F4AFA8;
 	background-color: #3E3E3E;
 }
+
+#contactPage {
+	position: relative;
+	height: 100vh;
+	background-color: #F4AFA8;
+}
+
+#contactForm {
+	height: 100vh;
+}
+
+#contactForm > input {
+	width: 25vw;
+	margin-top: 0.8vw;
+	padding: 0.5vw;
+}
+
+#contactForm > input[type="text"] {
+	border: none;
+}
+
+#contactForm > textarea {
+	width: 25vw;
+	margin-top: 0.8vw;
+	padding: 0.5vw;
+	border: none;
+}
+
+#contactForm > div {
+	width: 25vw;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#contactForm > div > input {
+	width: 12.1vw;
+	padding: 0.5vw;
+	border: none;
+}
+
+#submitButton {
+	opacity: transparent;
+	background: transparent;
+	border: thick solid white;
+}
