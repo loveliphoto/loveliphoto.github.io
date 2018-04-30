@@ -165,7 +165,7 @@ input:focus, textarea:focus {
 
 #section > p {
 	position: absolute;
-	left: 60%;
+	left: 30%;
 	right: 5%;
 	top: 10%;
 	font-size: 3vw;
@@ -175,6 +175,22 @@ input:focus, textarea:focus {
 	height: 100vh;
 	text-align: center;
 	position: relative;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+#portfolio > p {
+	font-size: 2.5vw;
+}
+
+#portfolio em {
+	font-size: 7vw;
+	text-align: center;
+    font-family: 'Clicker Script', cursive;
+    color: #F4AFA8;
+    font-style: normal;
 }
 
 #parallax {
