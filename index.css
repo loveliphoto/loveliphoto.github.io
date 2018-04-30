@@ -135,7 +135,7 @@ input:focus, textarea:focus {
 }
 
 .smallPicture {
-	width: 17vw;
+	width: 15vw;
 	margin: 1.2vw;
 }
 
@@ -161,6 +161,14 @@ input:focus, textarea:focus {
 #section {
 	background-image: url("engagement.jpg");
 	text-align: center;
+}
+
+#section > p {
+	position: absolute;
+	left: 60%;
+	right: 5%;
+	top: 10%;
+	font-size: 3vw;
 }
 
 #portfolio {
