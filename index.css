@@ -35,6 +35,15 @@ h2 {
 	background-color: white;
 }
 
+h4 {
+	font-family: 'Clicker Script', cursive;
+	color: white;
+	font-size: 5vw;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+}
+
 p {
 	margin: 0;
 }
@@ -185,12 +194,11 @@ input:focus, textarea:focus {
 	font-size: 2.5vw;
 }
 
-#portfolio em {
-	font-size: 7vw;
+#portfolio span {
+	font-size: 6vw;
 	text-align: center;
     font-family: 'Clicker Script', cursive;
     color: #F4AFA8;
-    font-style: normal;
 }
 
 #parallax {
@@ -225,10 +233,10 @@ input:focus, textarea:focus {
 	position: relative;
 	height: 100vh;
 	background-color: #F4AFA8;
-}
-
-#contactForm {
-	height: 100vh;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	align-items: center;
 }
 
 #contactForm > div {
