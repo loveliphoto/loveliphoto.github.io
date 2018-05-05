@@ -1,7 +1,15 @@
 #li {
 	display: flex;
-	flex-flow: row wrap;
+	flex-flow: row nowrap;
 	justify-content: space-between;
 	align-items: center;
 }
 
+.sidePic {
+	width: 35vw;
+	height: 100vh;
+}
+
+#about {
+	padding: 3vw;
+}
