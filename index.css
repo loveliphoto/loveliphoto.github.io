@@ -125,17 +125,17 @@ input:focus, textarea:focus {
 	background-color: #F4AFA8;
 }
 
-#about {
+#welcome {
 	height: 100vh;
 	width: 100%;
 }
 
-#about > div {
+#welcome > div {
 	height: 100vh;
 	width: 40%;
 }
 
-.aboutText {
+.welcomeText {
 	margin: 1.5vh 0;
 }
 
@@ -144,7 +144,7 @@ input:focus, textarea:focus {
 }
 
 .smallPicture {
-	width: 15vw;
+	width: 14vw;
 	margin: 1.2vw;
 }
 
@@ -155,8 +155,8 @@ input:focus, textarea:focus {
 
 .textOverImg > h3 {
 	margin: 0;
-	padding: 1vw;
-	font-size: 3vw;
+	padding: .8vw;
+	font-size: 2vw;
 	background-color: white;
 }
 
@@ -225,7 +225,7 @@ input:focus, textarea:focus {
 .textOverImg > p {
 	margin: 0;
 	padding: 0.5vw;
-	font-size: 1.5vw;
+	font-size: 1.25vw;
 	background-color: white;
 }
 
