@@ -81,7 +81,7 @@ a {
 	align-items: center;
 }
 
-.downButtonImg {
+.downButtonImg, .downButton img {
 	width: 50px;
 }
 
@@ -91,6 +91,7 @@ a {
 }
 
 #welcome > div {
+	position: relative;
 	height: 100vh;
 	width: 40%;
 }
