@@ -103,19 +103,22 @@ input:focus, textarea:focus {
 	width: 50px;
 }
 
-#nav {
+.nav {
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
 	opacity: transparent;
 	position: -webkit-sticky;
-	position: sticky;
 	top: 0;
 	width: 100%;
 	z-index: 1;
 }
 
-#nav > a {
+#nav {
+	position: sticky;
+}
+
+.nav > a {
 	color: white;
 	padding: 14px 16px;
 	text-align: center;
@@ -194,11 +197,13 @@ input:focus, textarea:focus {
 	font-size: 2.5vw;
 }
 
-#portfolio span {
+#portfolioText {
+	display: flex;
+	align-items: center;
+}
+
+#portfolio > h1 {
 	font-size: 6vw;
-	text-align: center;
-    font-family: 'Clicker Script', cursive;
-    color: #F4AFA8;
 }
 
 #parallax {
