@@ -1,0 +1,44 @@
+#menu {
+	position: sticky;
+	position: -webkit-sticky;
+	top: 0;
+	width: 100%;
+	z-index: 2;
+}
+
+#menuButton {
+	position: absolute;
+	top: 1.5rem;
+	right: 2.1rem;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	background: transparent;
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
+#menuButton > div {
+	width: 2.1rem;
+	height: 0.3rem;
+	background-color: darkgray;
+	transition: 0.39s ease;
+}
+
+#bar1 {
+	margin: 0.3rem 0;
+}
+
+.transform > #bar0 {
+	transform: rotate(-45deg) translate(-0.5rem, 0.35rem);
+}
+
+.transform > #bar1 {
+	opacity: 0;
+}
+
+.transform > #bar2 {
+	transform: rotate(45deg) translate(-0.5rem, -0.35rem);
+}

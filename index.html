@@ -2,11 +2,15 @@
 <html>
 
 <head>
-	<script src="email.js" async></script>
+	<link rel="stylesheet" type="text/css" href="universal.css">
 	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" type="text/css" href="menu.css">
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Clicker+Script" rel="stylesheet">
+
+	<script type="text/javascript" src="menu.js"></script>
+
 	<script type="text/javascript" src="lib/axios/dist/axios.standalone.js"></script>
 	<script type="text/javascript" src="lib/CryptoJS/rollups/hmac-sha256.js"></script>
 	<script type="text/javascript" src="lib/CryptoJS/rollups/sha256.js"></script>
@@ -19,6 +23,8 @@
 	<script type="text/javascript" src="lib/apiGatewayCore/utils.js"></script>
 	<script type="text/javascript" src="apigClient.js"></script>
 	<script type="text/javascript" src="email.js"></script>
+
+
 	<title>LOVE LI PHOTOGRAPHY</title>
 </head>
 
@@ -30,9 +36,12 @@
 		<a href="#welcome" class="downButton"><img src="downwhite.png" class="downButtonImg"></a>
 	</div>
 
-	<div id="nav" class="nav">
-		<a id="home">HOME</a>
-		<a>BLOG</a>
+	<div id="menu">
+		<button id="menuButton">
+			<div id="bar0"></div>
+			<div id="bar1"></div>
+			<div id="bar2"></div>
+		</button>
 	</div>
 
 	<div id="welcome" class="flexBoxRowEven">
