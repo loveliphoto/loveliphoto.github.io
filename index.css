@@ -85,17 +85,6 @@ a {
 	width: 50px;
 }
 
-.nav {
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	opacity: transparent;
-	position: -webkit-sticky;
-	top: 0;
-	width: 100%;
-	z-index: 1;
-}
-
 #welcome {
 	height: 100vh;
 	width: 100%;

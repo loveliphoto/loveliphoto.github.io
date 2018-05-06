@@ -1,7 +1,7 @@
 'use strict';
 
 document.addEventListener('DOMContentLoaded', function(event) {
-	document.getElementById('menuButton').addEventListener('click', toggleIcon);
+	document.getElementById('menu').addEventListener('click', toggleIcon);
 });
 
 function toggleIcon(event) {

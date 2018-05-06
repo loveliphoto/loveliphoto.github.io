@@ -3,7 +3,8 @@
 	position: -webkit-sticky;
 	top: 0;
 	width: 100%;
-	z-index: 2;
+	transition: 0.45s ease-out;
+	z-index: 1;
 }
 
 #menuButton {
@@ -18,27 +19,61 @@
 	border: none;
 	margin: 0;
 	padding: 0;
+	transition: inherit;
+	z-index: 1;
 }
 
 #menuButton > div {
 	width: 2.1rem;
 	height: 0.3rem;
-	background-color: darkgray;
-	transition: 0.39s ease;
+	background-color: var(--llgrey);
+	transition: inherit;
 }
 
 #bar1 {
 	margin: 0.3rem 0;
 }
 
-.transform > #bar0 {
+.transform #bar0 {
 	transform: rotate(-45deg) translate(-0.5rem, 0.35rem);
 }
 
-.transform > #bar1 {
+.transform #bar1 {
 	opacity: 0;
 }
 
-.transform > #bar2 {
+.transform #bar2 {
 	transform: rotate(45deg) translate(-0.5rem, -0.35rem);
+}
+
+#menuContent {
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-color: var(--llpink);
+	opacity: 0;
+	transition: inherit;
+}
+
+.transform #menuContent {
+	opacity: 1;
+}
+
+#menuLinks {
+	position: relative;
+	margin: 4.5rem 2.1rem;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	align-items: flex-end;
+}
+
+#menuLinks > a {
+	margin-top: 1rem;
+	color: var(--llgrey);
+	text-decoration: none;
+}
+
+#menuLinks > a:hover {
+	color: white;
 }

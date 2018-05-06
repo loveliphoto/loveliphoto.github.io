@@ -1,3 +1,8 @@
+:root {
+  --llgrey: #3E3E3E;
+  --llpink: #F4AFA8;
+}
+
 * {
 	box-sizing: border-box;
 }
