@@ -1,4 +1,4 @@
-h2 {
+.postHead > h2 {
 	margin: 0;
 	padding: 0;
 }
@@ -57,6 +57,10 @@ h2 {
 	width: 65%;
 }
 
+.content > p {
+	max-width: 65%;
+}
+
 #post0 {
 	top: 0;
 }
@@ -69,4 +73,9 @@ a {
 	background-color: #F4AFA8;
 	text-decoration-line: none;
 	padding: 5px;
+	font-size: 18px;
+}
+
+p {
+	font-size: 18px;
 }
