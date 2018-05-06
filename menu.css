@@ -52,11 +52,13 @@
 	right: 0;
 	background-color: var(--llpink);
 	opacity: 0;
+	visibility: hidden;
 	transition: inherit;
 }
 
 .transform #menuContent {
 	opacity: 1;
+	visibility: visible;
 }
 
 #menuLinks {
@@ -71,7 +73,6 @@
 #menuLinks > a {
 	margin-top: 1rem;
 	color: var(--llgrey);
-	text-decoration: none;
 }
 
 #menuLinks > a:hover {

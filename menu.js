@@ -1,9 +1,9 @@
 'use strict';
 
 document.addEventListener('DOMContentLoaded', function(event) {
-	document.getElementById('menu').addEventListener('click', toggleIcon);
+	document.getElementById('menuButton').addEventListener('click', toggleIcon);
 });
 
 function toggleIcon(event) {
-	event.currentTarget.classList.toggle('transform');
+	document.getElementById('menu').classList.toggle('transform');
 }

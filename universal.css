@@ -20,6 +20,10 @@ img {
 	display: block;
 }
 
+a {
+	text-decoration: none;
+}
+
 button, input, textarea {
     outline: none;
 }

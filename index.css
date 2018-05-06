@@ -6,7 +6,7 @@ body {
 	min-height: 100vh;
 	font-family: 'Quicksand', sans-serif;
 	font-size: 24px;
-    color: #3E3E3E;
+    color: var(--llgrey);
 }
 
 h1 {
@@ -106,19 +106,10 @@ a {
 
 .smallPicture {
 	width: 14vw;
-	margin: 1.2vw;
 }
 
 .largePicture {
 	width: 20vw;
-	margin: 2vw;
-}
-
-.textOverImg > h3 {
-	margin: 0;
-	padding: .8vw;
-	font-size: 2vw;
-	background-color: white;
 }
 
 .parallax {
@@ -171,6 +162,11 @@ a {
 
 .imgDiv {
 	position: relative;
+	margin: 1.2vw;
+}
+
+#portfolio .imgDiv {
+	margin: 3.2vw;
 }
 
 .textOverImg {
@@ -185,11 +181,23 @@ a {
 	align-items: center;
 }
 
-.textOverImg > p {
+.textOverImg h3, .textOverImg p {
 	margin: 0;
+	background-color: white;
+}
+
+.textOverImg h3:hover, .textOverImg p:hover {
+	color: var(--llpink);
+}
+
+.textOverImg p {
 	padding: 0.5vw;
 	font-size: 1.25vw;
-	background-color: white;
+}
+
+.textOverImg h3 {
+	padding: .8vw;
+	font-size: 2vw;
 }
 
 #contactPage {
