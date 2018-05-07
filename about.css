@@ -25,10 +25,11 @@
 p {
 	font-family: 'Quicksand', sans-serif;
 	font-size: 18px;
+	text-align: justify;
 }
 
 a {
-	background-color: #F4AFA8;
+	background-color: var(--llpink);
 	text-decoration-line: none;
 	padding: 10px;
 }

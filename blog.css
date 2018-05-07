@@ -27,7 +27,7 @@
 	padding-top: 50px;
 	height: 100%;
 	width: 20%;
-	background-color: #F4AFA8;
+	background-color: var(--llpink);
 	display: flex;
 	flex-flow: column nowrap;
 	justify-content: flex-start;
@@ -70,8 +70,7 @@
 }
 
 a {
-	background-color: #F4AFA8;
-	text-decoration-line: none;
+	background-color: var(--llpink);
 	padding: 5px;
 	font-size: 18px;
 }

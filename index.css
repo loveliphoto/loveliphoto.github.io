@@ -4,7 +4,7 @@ html {
 
 body {
 	min-height: 100vh;
-	font-family: 'Quicksand', sans-serif;
+	font-family: 'Quicksand', 'Verdana', sans-serif;
 	font-size: 24px;
     color: var(--llgrey);
 }
@@ -14,7 +14,7 @@ h1 {
     padding: 0;
     font-size: 80px;
     text-align: center;
-    font-family: 'Clicker Script', cursive;
+    font-family: 'Clicker Script', 'Brush Script MT', cursive;
     color: var(--llpink);
 }
 
@@ -23,10 +23,11 @@ h2 {
 	padding: 2vh;
 	color: var(--llpink);
 	background-color: white;
+	font-weight: bold;
 }
 
 h4 {
-	font-family: 'Clicker Script', cursive;
+	font-family: 'Clicker Script', 'Brush Script MT', cursive;
 	color: white;
 	font-size: 5vw;
 	text-align: center;
@@ -39,7 +40,7 @@ p {
 }
 
 a {
-	color: black;
+	color: var(--llgrey);
 }
 
 .flexBoxColCenter {
@@ -98,6 +99,7 @@ a {
 
 .welcomeText {
 	margin: 1.5vh 0;
+	text-align: justify;
 }
 
 #fourPictures > div {
@@ -181,21 +183,18 @@ a {
 	align-items: center;
 }
 
-.textOverImg h3, .textOverImg p {
+.textOverImg p {
 	margin: 0;
+	padding: 0.5vw;
+	font-size: 1.25vw;
 	background-color: white;
 }
 
-.textOverImg h3:hover, .textOverImg p:hover {
+.textOverImg p:hover {
 	color: var(--llpink);
 }
 
-.textOverImg p {
-	padding: 0.5vw;
-	font-size: 1.25vw;
-}
-
-.textOverImg h3 {
+#portfolio .textOverImg p {
 	padding: .8vw;
 	font-size: 2vw;
 }
@@ -203,7 +202,7 @@ a {
 #contactPage {
 	position: relative;
 	height: 100vh;
-	background-color: #F4AFA8;
+	background-color: var(--llpink);
 	display: flex;
 	flex-flow: column nowrap;
 	justify-content: flex-start;
