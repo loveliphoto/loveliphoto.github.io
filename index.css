@@ -136,25 +136,26 @@ a {
 
 #portfolio {
 	height: 100vh;
-	text-align: center;
 	position: relative;
-	display: flex;
-	flex-flow: column nowrap;
-	justify-content: flex-start;
-	align-items: center;
 }
 
-#portfolio > p {
-	font-size: 2.5vw;
+.centerAboveDownButton {
+	height: 90vh;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center; 
 }
 
 #portfolioText {
 	display: flex;
-	align-items: center;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: baseline;
 }
 
-#portfolio > h1 {
-	font-size: 6vw;
+#portfolioText > p {
+	margin-right: 1rem;
 }
 
 #parallax {
@@ -162,13 +163,13 @@ a {
 	text-align: center;
 }
 
-.imgDiv {
+.imgLink {
 	position: relative;
 	margin: 1.2vw;
 }
 
-#portfolio .imgDiv {
-	margin: 3.2vw;
+#portfolio .imgLink {
+	margin: 0 3.2vw;
 }
 
 .textOverImg {
@@ -203,10 +204,6 @@ a {
 	position: relative;
 	height: 100vh;
 	background-color: var(--llpink);
-	display: flex;
-	flex-flow: column nowrap;
-	justify-content: flex-start;
-	align-items: center;
 }
 
 #contactForm > div {

@@ -24,7 +24,6 @@
 	<script type="text/javascript" src="apigClient.js"></script>
 	<script type="text/javascript" src="email.js"></script>
 
-
 	<title>LOVE LI PHOTOGRAPHY</title>
 </head>
 
@@ -63,32 +62,24 @@
 		</div>
 		<div id="fourPictures" class="flexBoxColCenter">
 			<div class="flexBoxRowCenter">
-				<div class="imgDiv">
-					<a href="about.html">
-						<img src="betty-ben.jpg" class="smallPicture">
-						<div class="textOverImg"><p>MEET THE LIs</p></div>
-					</a>
-				</div>
-				<div class="imgDiv">
-					<a href="#portfolio">
-						<img src="65.jpg" class="smallPicture">
-						<div class="textOverImg"><p>SEE OUR WORK</p></div>
-					</a>
-				</div>
+				<a href="about.html" class="imgLink">
+					<img src="betty-ben.jpg" class="smallPicture">
+					<div class="textOverImg"><p>MEET THE LIs</p></div>
+				</a>
+				<a href="#portfolio" class="imgLink">
+					<img src="65.jpg" class="smallPicture">
+					<div class="textOverImg"><p>SEE OUR WORK</p></div>
+				</a>
 			</div>
 			<div class="flexBoxRowCenter">
-				<div class="imgDiv">
-					<a href="blog.html">
-						<img src="33.jpg" class="smallPicture">
-						<div class="textOverImg"><p>READ OUR BLOG</p></div>
-					</a>
-				</div>
-				<div class="imgDiv">
-					<a href="#contactPage">
-						<img src="62.jpg" class="smallPicture">
-						<div class="textOverImg"><p>GET IN TOUCH</p></div>
-					</a>
-				</div>
+				<a href="blog.html" class="imgLink">
+					<img src="33.jpg" class="smallPicture">
+					<div class="textOverImg"><p>READ OUR BLOG</p></div>
+				</a>
+				<a href="#contactPage" class="imgLink">
+					<img src="62.jpg" class="smallPicture">
+					<div class="textOverImg"><p>GET IN TOUCH</p></div>
+				</a>
 			</div>
 		</div>
 	</div>
@@ -101,22 +92,18 @@
 	</div>
 
 	<div id="portfolio">
-		<div id="portfolioText"><p>check out the </p> <h1> portfolio</h1></div>
-		<div class="flexBoxRowEven">
-			<div class="imgDiv">
-				<a href="#">
+		<div class="centerAboveDownButton">
+			<div id="portfolioText"><p>check out the</p><h1>portfolio</h1></div>
+			<div class="flexBoxRowEven">
+				<a href="#" class="imgLink">
 					<img src="16.jpg" class="largePicture">
 					<div class="textOverImg"><p>SENIORS</p></div>
 				</a>
-			</div>
-			<div class="imgDiv">
-				<a href="#">
+				<a href="#" class="imgLink">
 					<img src="99.jpg" class="largePicture">
 					<div class="textOverImg"><p>COUPLES</p></div>
 				</a>
-			</div>
-			<div class="imgDiv">
-				<a href="#">
+				<a href="#" class="imgLink">
 					<img src="betty-ben.jpg" class="largePicture">
 					<div class="textOverImg"><p>WEDDINGS</p></div>
 				</a>
@@ -127,19 +114,21 @@
 		</div>
 	</div>
 
-	<div id="contactPage" class="flexBoxColCenter">
-		<br><h4>say hello!</h4><br>
-		<form id="contactForm" class="flexBoxColCenter">
-			<div>
-				<input type="text" name="name" placeholder="NAME">
-				<input type="text" name="email" placeholder="EMAIL">
-			</div>
-			<input type="text" name="subjectLine" placeholder="SUBJECT LINE">
-			<input type="text" name="telephone" placeholder="TELEPHONE">
-			<input type="text" name="referredBy" placeholder="REFERRED BY">
-			<textarea name="message" placeholder="MESSAGE" rows="7"></textarea>
-			<input type="submit" value="SUBMIT FORM">
-		</form>
+	<div id="contactPage">
+		<div class="centerAboveDownButton">
+			<h4>say hello!</h4>
+			<form id="contactForm" class="flexBoxColCenter">
+				<div>
+					<input type="text" name="name" placeholder="NAME">
+					<input type="text" name="email" placeholder="EMAIL">
+				</div>
+				<input type="text" name="subjectLine" placeholder="SUBJECT LINE">
+				<input type="text" name="telephone" placeholder="TELEPHONE">
+				<input type="text" name="referredBy" placeholder="REFERRED BY">
+				<textarea name="message" placeholder="MESSAGE" rows="7"></textarea>
+				<input type="submit" value="SUBMIT FORM">
+			</form>
+		</div>
 		<div class="downButton">
 			<a href="#parallax"><img src="downwhite.png"></a>
 		</div>

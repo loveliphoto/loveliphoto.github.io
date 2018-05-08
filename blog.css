@@ -34,6 +34,11 @@
 	align-items: center;
 }
 
+#nav > p {
+	color: white;
+	font-size: 24px;
+}
+
 .content {
 	position: absolute;
 	right: 0;
@@ -77,4 +82,21 @@ a {
 
 p {
 	font-size: 18px;
+}
+
+.icons {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.icons img {
+	width: 3vw;
+	margin: 5px;
+}
+
+.icons > a {
+	margin: 0;
+	padding: 0;
 }
