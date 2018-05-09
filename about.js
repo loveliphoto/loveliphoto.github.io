@@ -6,9 +6,13 @@ document.addEventListener('DOMContentLoaded', function(event) {
 });
 
 function bettyButton(event) {
-	document.getElementById('li').classList.toggle('left');
+	var classList = document.getElementById('li').classList;
+	classList.toggle('center');
+	classList.toggle('left');
 }
 
 function benButton(event) {
-	document.getElementById('li').classList.toggle('right');
+	var classList = document.getElementById('li').classList;
+	classList.toggle('center');
+	classList.toggle('right');
 }

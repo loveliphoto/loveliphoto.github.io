@@ -1,30 +1,32 @@
+body {
+	overflow-x: hidden;
+}
+
 #li {
+	position: relative;
+	width: 260vw;
 	display: flex;
 	flex-flow: row nowrap;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
 	transition: 0.8s ease-in-out;
 }
 
 .center {
-	
-}
-
-.left {
-	transform: translateX(80vw);
-}
-
-.right {
 	transform: translateX(-80vw);
 }
 
-.sidePic > img {
-	height: 100vh;
-	width: 20vw;
+.left {
+	transform: translateX(0vw);
+}
+
+.right {
+	transform: translateX(-160vw);
 }
 
 #about {
 	width: 60vw;
+	height: 100vh;
 	padding: 0 3vw;
 	display: flex;
 	flex-flow: column nowrap;
@@ -32,7 +34,17 @@
 	align-items: center;
 }
 
-#li > button {
+.sidePic {
+	position: relative;
+}
+
+.sidePic > img {
+	width: 100vw;
+	height: 100vh;
+	object-fit: cover;
+}
+
+.sidePic > button {
 	position: absolute;
 	bottom: 10%;
 	border: none;
@@ -42,11 +54,18 @@
 }
 
 #bettyButton {
-	left: 2.5vw;
+	right: 5vw;
 }
 
 #benButton {
-	right: 2.5vw;
+	left: 5vw;
+}
+
+#poop {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
 }
 
 #poop > img {
