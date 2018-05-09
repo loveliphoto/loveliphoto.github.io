@@ -1,21 +1,52 @@
-#aboutNav {
-	position: fixed;
-}
-
 #li {
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-between;
 	align-items: center;
-	top: 0;
+	transition: 0.8s ease-in-out;
 }
 
-.sidePic {
+.center {
+	
+}
+
+.left {
+	transform: translateX(80vw);
+}
+
+.right {
+	transform: translateX(-80vw);
+}
+
+.sidePic > img {
 	height: 100vh;
+	width: 20vw;
 }
 
 #about {
-	padding: 3vw;
+	width: 60vw;
+	padding: 0 3vw;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+}
+
+#li > button {
+	position: absolute;
+	bottom: 10%;
+	border: none;
+	background-color: var(--llpink);
+	color: var(--llgrey);
+	font-size: 1.5vw;
+}
+
+#bettyButton {
+	left: 2.5vw;
+}
+
+#benButton {
+	right: 2.5vw;
 }
 
 #poop > img {
@@ -26,10 +57,4 @@ p {
 	font-family: 'Quicksand', sans-serif;
 	font-size: 18px;
 	text-align: justify;
-}
-
-a {
-	background-color: var(--llpink);
-	text-decoration-line: none;
-	padding: 10px;
 }
