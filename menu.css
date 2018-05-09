@@ -76,6 +76,7 @@
 	font-size: 1.5rem;
 	color: var(--llgrey);
 	background: transparent;
+	font-family: 'Quicksand', 'Verdana', sans-serif;
 }
 
 #menuLinks > a:hover {
