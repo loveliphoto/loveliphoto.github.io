@@ -36,6 +36,7 @@ body {
 
 .sidePic {
 	position: relative;
+	transition: inherit;
 }
 
 .sidePic > img {
@@ -51,14 +52,21 @@ body {
 	background-color: var(--llpink);
 	color: var(--llgrey);
 	font-size: 1.5vw;
+	transition: inherit;
+	z-index: 1;
 }
 
-#bettyButton {
+#bettyButton, #bettyButt {
 	right: 5vw;
 }
 
-#benButton {
+#benButton, #benButt {
 	left: 5vw;
+}
+
+.hidden {
+	opacity: 0;
+	z-index: 0;
 }
 
 #poop {
