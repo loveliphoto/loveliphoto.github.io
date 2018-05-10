@@ -45,9 +45,29 @@ body {
 	object-fit: cover;
 }
 
+.sidePic > div {
+	position: absolute;
+	bottom: 10vh;
+	width: 30vw;
+	height: 80vh;
+	background-color: white;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.sidePic > #bettyText {
+	left: 10vw;
+}
+
+.sidePic > #benText {
+	right: 10vw;
+}
+
 .sidePic > button {
 	position: absolute;
-	bottom: 10%;
+	bottom: 10vh;
 	border: none;
 	background-color: var(--llpink);
 	color: var(--llgrey);
