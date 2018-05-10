@@ -78,10 +78,12 @@ body {
 
 #bettyButton, #bettyButt {
 	right: 5vw;
+	font-family: 'Barlow Condensed', sans-serif;
 }
 
 #benButton, #benButt {
 	left: 5vw;
+	font-family: 'Barlow Condensed', sans-serif;
 }
 
 .hidden {
@@ -94,14 +96,12 @@ body {
 	flex-flow: row nowrap;
 	justify-content: center;
 	align-items: center;
-}
-
-#poop > img {
 	height: 100vh;
+	background-color: var(--llpink);
 }
 
 p {
-	font-family: 'Quicksand', sans-serif;
-	font-size: 18px;
+	font-family: 'Quicksand', 'Verdana', sans-serif;
+	font-size: 1.2rem;
 	text-align: justify;
 }
