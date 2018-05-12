@@ -22,7 +22,6 @@ img {
 
 a {
 	text-decoration: none;
-	font-family: 'Lato', sans-serif;
 }
 
 button, input, textarea {
@@ -41,4 +40,15 @@ h1 {
     font-size: 80px;
     font-family: 'Clicker Script', 'Brush Script MT', cursive;
     color: var(--llpink);
+}
+
+p {
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	font-size: 1.2rem;
+	text-align: justify;
+}
+
+a {
+	font-family: 'Lato', sans-serif;
 }

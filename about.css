@@ -106,7 +106,7 @@ body {
 	background-color: var(--llpink);
 }
 
-p {
+.about > p {
 	font-family: 'Lato', 'Verdana', sans-serif;
 	font-size: 1.2rem;
 	font-weight: 300;

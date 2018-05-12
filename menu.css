@@ -50,10 +50,12 @@
 	position: absolute;
 	top: 0;
 	right: 0;
-	background-color: var(--llpink);
+	background-color: white;
 	opacity: 0;
 	visibility: hidden;
 	transition: inherit;
+	width: 16rem;
+	height: 100vh;
 }
 
 .transform #menuContent {
@@ -67,18 +69,45 @@
 	display: flex;
 	flex-flow: column nowrap;
 	justify-content: flex-start;
-	align-items: flex-end;
+	align-items: flex-start;
+}
+
+#menuLinks > p {
+	font-size: 1.5rem;
 }
 
 #menuLinks > a {
 	margin-top: 1rem;
 	padding: 0;
-	font-size: 1.5rem;
+	font-size: 2rem;
 	font-weight: 300;
 	color: var(--llgrey);
 	background: transparent;
 }
 
 #menuLinks > a:hover {
-	color: white;
+	color: var(--llpink);
+}
+
+#menuLinks > div {
+	height: .2rem;
+	width: 5rem;
+	margin-top: 1rem;
+	background-color: var(--llpink);
+}
+
+#menuicons {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: center;
+	margin: 2rem;
+}
+
+#menuicons img {
+	width: 3rem;
+}
+
+#menuicons > a {
+	text-decoration: none;
 }
