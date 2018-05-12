@@ -39,10 +39,6 @@ body {
 	transition: inherit;
 }
 
-.sidePic span {
-	vertical-align: 0.1em;
-}
-
 .sidePic > img {
 	width: 100vw;
 	height: 100vh;
@@ -73,23 +69,16 @@ body {
 	position: absolute;
 	bottom: 10vh;
 	border: none;
-	background-color: var(--llpink);
-	color: var(--llgrey);
-	font-size: 1.5vw;
 	transition: inherit;
 	z-index: 1;
 }
 
 #bettyButton, #bettyButt {
 	right: 5vw;
-	font-family: 'Lato', sans-serif;
-	font-weight: 300;
 }
 
 #benButton, #benButt {
 	left: 5vw;
-	font-family: 'Lato', sans-serif;
-	font-weight: 300;
 }
 
 .hidden {
