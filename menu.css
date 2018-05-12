@@ -47,6 +47,9 @@
 }
 
 #menuContent {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -56,6 +59,7 @@
 	transition: inherit;
 	width: 16rem;
 	height: 100vh;
+	padding-top: 2rem;
 }
 
 .transform #menuContent {
@@ -68,7 +72,6 @@
 	margin: 4.5rem 2.1rem;
 	display: flex;
 	flex-flow: column nowrap;
-	justify-content: flex-start;
 	align-items: flex-start;
 }
 
@@ -100,7 +103,8 @@
 	flex-flow: row wrap;
 	justify-content: space-between;
 	align-items: center;
-	margin: 2.5rem;
+	margin-left: 2.5rem;
+	margin-right: 2.5rem;
 }
 
 #menuIcons img {

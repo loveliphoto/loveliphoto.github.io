@@ -62,3 +62,20 @@ p {
 a {
 	font-family: 'Lato', sans-serif;
 }
+
+footer {
+	position: relative;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 0.5vw;
+	margin: 0;
+	color: white;
+	background-color: var(--llgrey);
+}
+
+footer > p {
+	font-size: .8rem;
+	text-align: center;
+	margin: 0;
+}
