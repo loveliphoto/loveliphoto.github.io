@@ -55,10 +55,6 @@
 	margin: 2rem;
 }
 
-.post span {
-	vertical-align: 0.1em;
-}
-
 .postHead {
 	width: 100%;
 	display: flex;
@@ -70,15 +66,6 @@
 .blogImg {
 	width: 100%;
 	margin: 2vh;
-}
-
-.post > a {
-	color: var(--llgrey);
-	background-color: var(--llpink);
-	font-family: 'Lato', 'Verdana', sans-serif;
-	padding: 5px;
-	font-size: 18px;
-    font-weight: 300;
 }
 
 .smallPicture {
