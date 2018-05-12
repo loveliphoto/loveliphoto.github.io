@@ -39,15 +39,23 @@
 	font-size: 24px;
 }
 
-.content {
+#posts {
+	display: flex;
+	flex-flow: column nowrap;
+	width: 80%;
+	right: 0;
+}
+
+.post {
 	position: absolute;
 	right: 0;
 	height: 100vh;
 	width: 80%;
 	display: flex;
 	flex-flow: column nowrap;
-	justify-content: space-evenly;
+	justify-content: center;
 	align-items: center;
+	margin: 1rem;
 }
 
 .postHead {
@@ -60,9 +68,10 @@
 
 .blogImg {
 	width: 65%;
+	margin: 2vh;
 }
 
-.content > p {
+.post > p {
 	max-width: 65%;
 }
 

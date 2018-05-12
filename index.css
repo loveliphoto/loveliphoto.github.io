@@ -4,9 +4,10 @@ html {
 
 body {
 	min-height: 100vh;
-	font-family: 'Quicksand', 'Verdana', sans-serif;
+	font-family: 'Lato', 'Verdana', sans-serif;
 	font-size: 1.2rem;
     color: var(--llgrey);
+    font-weight: 300;
 }
 
 h2 {
@@ -14,7 +15,7 @@ h2 {
 	padding: 2vh;
 	color: var(--llpink);
 	background-color: white;
-	font-weight: bold;
+	font-weight: 700;
 }
 
 h4 {
@@ -209,7 +210,8 @@ a {
 	width: 14.6vw;
 	padding: 0.5vw;
 	border: none;
-	font-family: 'Quicksand', sans-serif;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
 	font-size: 16px;
 }
 
@@ -217,7 +219,8 @@ a {
 	width: 30vw;
 	margin-top: 0.8vw;
 	padding: 0.5vw;
-	font-family: 'Quicksand', sans-serif;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
 	font-size: 16px;
 }
 
@@ -230,7 +233,8 @@ a {
 	margin-top: 0.8vw;
 	padding: 0.5vw;
 	border: none;
-	font-family: 'Quicksand', sans-serif;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
 	font-size: 16px;
 }
 
