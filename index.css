@@ -10,15 +10,6 @@ body {
     font-weight: 300;
 }
 
-h2 {
-	margin: 0;
-	padding: 1rem;
-	color: var(--llpink);
-	background-color: white;
-	font-weight: 700;
-	font-size: 2rem;
-}
-
 h4 {
 	font-family: 'Clicker Script', 'Brush Script MT', cursive;
 	color: white;
