@@ -39,6 +39,7 @@
 	margin: 0 0 0 0.5rem;
 	font-size: 2rem;
 	color: var(--llpink);
+	font-weight: 500;
 }
 
 .transform #menu-menu {
