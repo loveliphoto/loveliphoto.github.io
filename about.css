@@ -70,7 +70,6 @@ body {
 	bottom: 10vh;
 	border: none;
 	transition: inherit;
-	z-index: 1;
 }
 
 #bettyButton, #bettyButt {
@@ -83,7 +82,7 @@ body {
 
 .hidden {
 	opacity: 0;
-	z-index: 0;
+	visibility: hidden;
 }
 
 #aboutLL {
