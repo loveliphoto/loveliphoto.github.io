@@ -37,7 +37,7 @@
 }
 
 #sidebar {
-	background-color: var(--llpink);
+	background-color: #fde2e1;
 	padding-top: 6rem;
 	width: 20%;
 	display: flex;
@@ -78,7 +78,7 @@ p {
 }
 
 #sidebar > p {
-	color: white;
+	color: var(--llgrey);
 	font-size: 1.5rem;
 }
 
