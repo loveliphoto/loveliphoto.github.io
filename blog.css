@@ -34,11 +34,12 @@
 	align-items: center;
 	width: 80%;
     background-color: white;
+    margin: 1rem;
 }
 
 #sidebar {
 	background-color: #fde2e1;
-	padding-top: 6rem;
+	padding-top: 1rem;
 	width: 20%;
 	display: flex;
 	flex-flow: column nowrap;
@@ -46,14 +47,19 @@
 	align-items: center;
 }
 
+.small-picture {
+	width: 16vw;
+	margin: 1rem;
+}
+
+
 .post {
 	flex-flow: column nowrap;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	width: 75%;
-	padding: 1rem;
-	margin-top: 2rem;
+	margin: 1rem;
 }
 
 .postHead {
@@ -69,17 +75,44 @@
 	margin: 2vh;
 }
 
-.smallPicture {
-	width: 14vw;
+.flexBoxColCenter {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.textOverImg {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.textOverImg p {
+	margin: 0;
+	padding: 0.5vw;
+	font-size: 1.2vw;
+	background-color: white;
 }
 
 p {
-	font-size: 18px;
+	font-size: 1.2rem;
+}
+
+h2 {
+	margin: 1rem;
 }
 
 #sidebar > p {
 	color: var(--llgrey);
-	font-size: 1.5rem;
+	font-size: 1.8vw;
 }
 
 .icons {
