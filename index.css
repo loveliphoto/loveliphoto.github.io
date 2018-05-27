@@ -1,9 +1,4 @@
-html {
-	height: 100vh;
-}
-
 body {
-	min-height: 100vh;
 	font-family: 'Lato', 'Verdana', sans-serif;
 	font-size: 1.2rem;
     color: var(--llgrey);
@@ -18,18 +13,13 @@ h4 {
 	font-family: 'Clicker Script', 'Brush Script MT', cursive;
 	color: white;
 	font-size: 5vw;
-	text-align: center;
 	padding: 0;
 	margin: 0;
 }
 
-a {
-	color: var(--llgrey);
-}
-
 header {
+	width: 100vw;
 	height: 100vh;
-	width: 100%;
 	background-image: url("wedding.jpg");
 	background-size: cover;
 	display: flex;
@@ -54,8 +44,8 @@ header {
 }
 
 #welcome {
+	width: 100vw;
 	height: 100vh;
-	width: 100%;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
@@ -93,20 +83,16 @@ header {
 	width: 20vw;
 }
 
-.parallax {
-	height: 100vh;
-	background-attachment: fixed;
-	background-size: cover;
+#testimonial {
 	position: relative;
-}
-
-#section {
+	width: 100vw;
+	height: 100vh;
 	background-image: url("engagement.jpg");
-	background-position: center;
-	text-align: center;
+	background-size: cover;
+	background-attachment: fixed;
 }
 
-#section > p {
+#testimonial > p {
 	position: absolute;
 	left: 30%;
 	right: 5%;
@@ -115,7 +101,7 @@ header {
 	text-align: center;
 }
 
-#section > p > a {
+#testimonial > p > a {
 	background-color: pink;
 	font-size: 1rem;
 	padding: .5rem;
@@ -150,14 +136,6 @@ header {
 	flex-direction: row;
 	justify-content: space-evenly;
 	align-items: center;
-}
-
-#parallax {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	background-image: url("1.jpg");
 }
 
 #portfolio .img-link {
@@ -249,4 +227,16 @@ header {
 	opacity: transparent;
 	background: transparent;
 	border: thick solid white;
+}
+
+#bottom {
+	width: 100vw;
+	height: 100vh;
+	background-image: url("1.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }

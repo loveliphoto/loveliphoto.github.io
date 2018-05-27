@@ -1,7 +1,7 @@
 'use strict';
 
 document.addEventListener('DOMContentLoaded', function(event) {
-	document.getElementById('contactForm').addEventListener('submit', sendEmail);
+	document.getElementById('contact-form').addEventListener('submit', sendEmail);
 });
 
 function sendEmail(event) {
