@@ -23,33 +23,8 @@ h4 {
 	margin: 0;
 }
 
-footer > p {
-	margin: 0;
-}
-
 a {
 	color: var(--llgrey);
-}
-
-.flexBoxColCenter {
-	display: flex;
-	flex-flow: column nowrap;
-	justify-content: center;
-	align-items: center;
-}
-
-.flexBoxRowCenter {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: center;
-	align-items: center;
-}
-
-.flexBoxRowEven {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-evenly;
-	align-items: center;
 }
 
 header {
@@ -63,24 +38,28 @@ header {
 	align-items: center;
 }
 
-.downButton {
+.down-button {
 	position: absolute;
 	right: 0;
 	bottom: 5%;
 	left: 0;
 	display: flex;
-	flex-flow: row wrap;
+	flex-direction: row;
 	justify-content: center;
 	align-items: center;
 }
 
-.downButtonImg, .downButton img {
+.down-button-img, .down-button img {
 	width: 50px;
 }
 
 #welcome {
 	height: 100vh;
 	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
 }
 
 #welcome-text {
@@ -147,17 +126,17 @@ header {
 	position: relative;
 }
 
-.centerAboveDownButton {
+.center-above-down-button {
 	height: 90vh;
 	display: flex;
-	flex-flow: column nowrap;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center; 
 }
 
 #portfolioText {
 	display: flex;
-	flex-flow: row nowrap;
+	flex-direction: row;
 	justify-content: center;
 	align-items: baseline;
 }
@@ -166,9 +145,19 @@ header {
 	margin-right: 1rem;
 }
 
+#portfolio-links {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
 #parallax {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	background-image: url("1.jpg");
-	text-align: center;
 }
 
 #portfolio .img-link {
@@ -182,7 +171,7 @@ header {
 	bottom: 0;
 	left: 0;
 	display: flex;
-	flex-flow: column nowrap;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
@@ -209,15 +198,22 @@ header {
 	background-color: var(--llpink);
 }
 
-#contactForm > div {
+#contact-form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#contact-form > div {
 	width: 30vw;
 	display: flex;
-	flex-flow: row nowrap;
+	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
 }
 
-#contactForm > div > input {
+#contact-form > div > input {
 	width: 14.6vw;
 	padding: 0.5vw;
 	border: none;
@@ -226,7 +222,7 @@ header {
 	font-size: 16px;
 }
 
-#contactForm > input {
+#contact-form > input {
 	width: 30vw;
 	margin-top: 0.8vw;
 	padding: 0.5vw;
@@ -235,11 +231,11 @@ header {
 	font-size: 16px;
 }
 
-#contactForm > input[type="text"] {
+#contact-form > input[type="text"] {
 	border: none;
 }
 
-#contactForm > textarea {
+#contact-form > textarea {
 	width: 30vw;
 	margin-top: 0.8vw;
 	padding: 0.5vw;
@@ -249,7 +245,7 @@ header {
 	font-size: 16px;
 }
 
-#contactForm > input[type="submit"] {
+#contact-form > input[type="submit"] {
 	opacity: transparent;
 	background: transparent;
 	border: thick solid white;
