@@ -75,26 +75,34 @@ a {
 	width: 100%;
 }
 
-#welcome > div {
-	position: relative;
-	height: 100vh;
-	width: 40%;
+#welcome-text {
+	width: 40vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
-.welcomeText {
+#welcome-text > * {
 	margin: 1.5vh 0;
-	text-align: justify;
 }
 
-#fourPictures > div {
-	width: 100%;
+#four-pics {
+	display: grid;
+	grid: repeat(2, 1fr) / repeat(2, 1fr);
+	place-items: center center;
+	gap: 2.4vw;
 }
 
-.smallPicture {
+.img-link {
+	position: relative;
+}
+
+.small-pic {
 	width: 14vw;
 }
 
-.largePicture {
+.large-pic {
 	width: 20vw;
 }
 
@@ -154,12 +162,7 @@ a {
 	text-align: center;
 }
 
-.imgLink {
-	position: relative;
-	margin: 1.2vw;
-}
-
-#portfolio .imgLink {
+#portfolio .img-link {
 	margin: 0 3.2vw;
 }
 
