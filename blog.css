@@ -1,11 +1,13 @@
-.postHead > h2 {
-	margin: 0;
-	padding: 0;
+body {
+	display: grid;
+	grid: "header header" 80vh
+		  "nav nav" 0vh
+		  "sidebar posts" auto
+		  "footer footer" auto
+		  / 1fr 4fr;
 }
 
-#headerImg {
-	height: 80vh;
-	width: 100%;
+header {
 	background-image: url("0.jpg");
 	background-size: cover;
 	display: flex;
@@ -14,37 +16,18 @@
 	align-items: flex-start;
 }
 
-#headerImg > h2{
+header > h2 {
 	position: relative;
 	left: 10rem;
 }
 
-#blog {
-	position: relative;
-	width: 100vw;
-	display: flex;
-	flex-flow: row nowrap;
-	justify-content: center;
-	align-items: stretch;
-}
-
 #posts {
+	grid-area: posts;
 	display: flex;
 	flex-flow: column nowrap;
 	align-items: center;
-	width: 80%;
     background-color: white;
     margin: 1rem;
-}
-
-#sidebar {
-	background-color: #fde2e1;
-	padding-top: 1rem;
-	width: 20%;
-	display: flex;
-	flex-flow: column nowrap;
-	justify-content: flex-start;
-	align-items: center;
 }
 
 .small-picture {
@@ -62,7 +45,7 @@
 	margin: 1rem;
 }
 
-.postHead {
+.post-head {
 	width: 100%;
 	display: flex;
 	flex-flow: row wrap;
@@ -70,7 +53,12 @@
 	align-items: center;
 }
 
-.blogImg {
+.post-head > h2 {
+	margin: 0;
+	padding: 0;
+}
+
+.blog-img {
 	width: 100%;
 	margin: 2vh;
 }
@@ -102,12 +90,18 @@
 	background-color: white;
 }
 
-p {
-	font-size: 1.2rem;
-}
-
 h2 {
 	margin: 1rem;
+}
+
+#sidebar {
+	grid-area: sidebar;
+	background-color: #fde2e1;
+	padding-top: 1rem;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	align-items: center;
 }
 
 #sidebar > p {
@@ -115,19 +109,14 @@ h2 {
 	font-size: 1.8vw;
 }
 
-.icons {
+#sidebar-icons {
+	width: 70%;
 	display: flex;
-	flex-flow: row wrap;
+	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
 }
 
-.icons img {
-	width: 3vw;
-	margin: 5px;
-}
-
-.icons > a {
-	margin: 0;
-	padding: 0;
+#sidebar-icons img {
+	width: 3.75vw;
 }

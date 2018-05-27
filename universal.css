@@ -63,7 +63,12 @@ a {
 	font-family: 'Lato', sans-serif;
 }
 
+header {
+	grid-area: header;
+}
+
 footer {
+	grid-area: footer;
 	position: relative;
 	right: 0;
 	bottom: 0;

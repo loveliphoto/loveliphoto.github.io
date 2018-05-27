@@ -1,8 +1,9 @@
 nav {
+	grid-area: nav;
 	position: sticky;
 	position: -webkit-sticky;
 	top: 0;
-	width: 100%;
+	width: 100vw;
 	font-family: 'Lato', 'Verdana', sans-serif;
 	font-weight: 300;
 	transition: all 0.45s ease-out;
