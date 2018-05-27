@@ -89,7 +89,7 @@ a {
 
 #four-pics {
 	display: grid;
-	grid: repeat(2, 1fr) / repeat(2, 1fr);
+	grid: repeat(2, auto) / repeat(2, auto);
 	place-items: center center;
 	gap: 2.4vw;
 }
