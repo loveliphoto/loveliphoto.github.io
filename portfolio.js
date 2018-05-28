@@ -1,14 +1,23 @@
 'use strict';
 
-const START_INDEX = 3;
-let index = START_INDEX;
+let START_INDEX;
+let index;
 let tx = [];
 
 window.addEventListener('load', function(event) {
 	let carousel = document.getElementById('carousel');
 	let photos = carousel.children;
 
-	let t = photos[0].clientWidth + photos[1].clientWidth + photos[2].clientWidth - ((carousel.clientWidth - photos[3].clientWidth) / 2);
+	START_INDEX = Math.floor(photos.length / 2);
+	index = START_INDEX;
+
+	let t = 0;
+
+	for (let i = 0; i < START_INDEX; i++) {
+		t += photos[i].clientWidth;
+	}
+
+	t -= ((carousel.clientWidth - photos[START_INDEX].clientWidth) / 2);
 
 	for (let img of photos) {
 		img.addEventListener('transitionend', visible);
@@ -21,9 +30,8 @@ window.addEventListener('load', function(event) {
 });
 
 function visible(event) {
-	if (event.target.style.visibility == 'hidden') {
-		event.target.style.visibility = 'visible';
-	}
+	event.target.style.opacity = 1;
+	event.target.removeEventListener('transitionend', visible);
 }
 
 function scrollLeft(event) {
@@ -35,7 +43,8 @@ function scrollLeft(event) {
 		endIndex %= photos.length;
 	}
 
-	photos[endIndex].style.visibility = 'hidden';
+	photos[endIndex].style.opacity = 0;
+	photos[endIndex].addEventListener('transitionend', visible);
 
 	for (let i = 0; i < photos.length; i++) {
 		tx[endIndex] += photos[i].clientWidth;
@@ -70,7 +79,8 @@ function scrollRight(event) {
 		startIndex += photos.length;
 	}
 
-	photos[startIndex].style.visibility = 'hidden';
+	photos[startIndex].style.opacity = 0;
+	photos[startIndex].addEventListener('transitionend', visible);
 
 	for (let i = 0; i < photos.length; i++) {
 		tx[startIndex] -= photos[i].clientWidth;

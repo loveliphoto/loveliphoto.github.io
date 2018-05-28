@@ -6,13 +6,15 @@ body {
 	width: 100vw;
 	height: 100vh;
 	overflow: hidden;
+	background-color: var(--llgrey);
 	display: flex;
 	flex-direction: row;
 }
 
 #carousel > img {
 	height: 100vh;
-	transition: transform 0.8s ease-in-out;
+	transition: transform 0.8s ease;
+	opacity: 0;
 }
 
 #left-arrow {
