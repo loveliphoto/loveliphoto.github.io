@@ -67,6 +67,10 @@ a {
 	font-family: 'Lato', 'Verdana', sans-serif;
 }
 
+a:visited {
+	color: var(--llgrey);
+}
+
 footer {
 	grid-area: footer;
 	width: 100vw;

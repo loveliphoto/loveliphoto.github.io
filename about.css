@@ -91,7 +91,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	height: 100vh;
-	background-color: var(--llpink);
+	background-color: #fff2f2;
 }
 
 #aboutText {

@@ -96,7 +96,7 @@ h2 {
 
 #sidebar {
 	grid-area: sidebar;
-	background-color: #fde2e1;
+	background-color: #fff2f2;
 	padding-top: 1rem;
 	display: flex;
 	flex-flow: column nowrap;
