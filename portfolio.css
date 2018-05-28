@@ -3,17 +3,18 @@ body {
 }
 
 header {
-	background-image: url("0.jpg");
+	background-color: white;
 	background-size: cover;
 	display: flex;
 	flex-flow: column nowrap;
 	justify-content: center;
 	align-items: flex-start;
+	height: 15vh;
 }
 
 header > h2 {
 	position: relative;
-	left: 10rem;
+	left: 5rem;
 }
 
 #carousel {
