@@ -1,0 +1,121 @@
+#menu {
+	position: sticky;
+	position: -webkit-sticky;
+	top: 0;
+	width: 100%;
+	font-family: 'Lato', 'Verdana', sans-serif;
+	transition: all 0.45s ease-out;
+	z-index: 1;
+}
+
+#menuButton {
+	position: absolute;
+	top: 1.5rem;
+	right: 2.1rem;
+	transition: inherit;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+	z-index: 1;
+}
+
+#menuButton > button {
+	padding: 0;
+	transition: inherit;
+	background: transparent;
+	border: none;
+	font-family: 'Lato', 'Verdana', sans-serif;
+	font-weight: 300;
+}
+
+#menu-menu {
+	margin: 0;
+	font-size: 1.5rem;
+	color: var(--llgrey);
+}
+
+#menu-icon {
+	margin: 0 0 0 0.5rem;
+	font-size: 2rem;
+	color: var(--llpink);
+	font-weight: 500;
+}
+
+.transform #menu-menu {
+	opacity: 0;
+	visibility: hidden;
+}
+
+.transform #menu-icon {
+	transform: rotate(45deg);
+}
+
+#menuContent {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-color: white;
+	opacity: 0;
+	visibility: hidden;
+	transition: inherit;
+	width: 16rem;
+	height: 100vh;
+	padding-top: 2rem;
+}
+
+.transform #menuContent {
+	opacity: 1;
+	visibility: visible;
+}
+
+#menuLinks {
+	position: relative;
+	margin: 4.5rem 2.1rem;
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: flex-start;
+}
+
+#menuContent p {
+	font-size: 1.5rem;
+}
+
+#menuLinks > a {
+	margin-top: 1rem;
+	padding: 0;
+	font-size: 2rem;
+	font-weight: 300;
+	color: var(--llgrey);
+	background: transparent;
+}
+
+#menuLinks > a:hover {
+	color: var(--llpink);
+}
+
+#menuLinks > div {
+	height: .2rem;
+	width: 5rem;
+	background-color: var(--llpink);
+}
+
+#menuIcons {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: center;
+	margin-left: 2.5rem;
+	margin-right: 2.5rem;
+}
+
+#menuIcons img {
+	width: 3rem;
+}
+
+#menuIcons > a {
+	text-decoration: none;
+}
