@@ -18,7 +18,6 @@ h4 {
 }
 
 header {
-	width: 100vw;
 	height: 100vh;
 	background-image: url("wedding.jpg");
 	background-size: cover;
@@ -26,6 +25,10 @@ header {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+}
+
+section {
+	height: 100vh;
 }
 
 .down-button {
@@ -44,8 +47,6 @@ header {
 }
 
 #welcome {
-	width: 100vw;
-	height: 100vh;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
@@ -85,8 +86,6 @@ header {
 
 #testimonial {
 	position: relative;
-	width: 100vw;
-	height: 100vh;
 	background-image: url("engagement.jpg");
 	background-size: cover;
 	background-attachment: fixed;
@@ -108,7 +107,6 @@ header {
 }
 
 #portfolio {
-	height: 100vh;
 	position: relative;
 }
 
@@ -175,7 +173,6 @@ figcaption:hover {
 
 #contactPage {
 	position: relative;
-	height: 100vh;
 	background-color: var(--llpink);
 }
 
@@ -233,8 +230,6 @@ figcaption:hover {
 }
 
 #bottom {
-	width: 100vw;
-	height: 100vh;
 	background-image: url("1.jpg");
 	background-size: cover;
 	background-attachment: fixed;
