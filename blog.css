@@ -2,7 +2,7 @@ body {
 	display: grid;
 	grid: "header header" 80vh
 		  "nav nav" 0vh
-		  "aside posts" auto
+		  "aside main" auto
 		  "footer footer" auto
 		  / 1fr 4fr;
 }
@@ -21,8 +21,8 @@ header > h2 {
 	left: 10rem;
 }
 
-#posts {
-	grid-area: posts;
+main {
+	grid-area: main;
 	display: flex;
 	flex-flow: column nowrap;
 	align-items: center;
