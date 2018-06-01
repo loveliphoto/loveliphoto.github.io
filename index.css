@@ -142,7 +142,9 @@ header {
 	margin: 0 3.2vw;
 }
 
-.textOverImg {
+figure {
+	margin: 0;
+	padding: 0;
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -154,18 +156,19 @@ header {
 	align-items: center;
 }
 
-.textOverImg p {
+figcaption {
 	margin: 0;
 	padding: 0.5vw;
 	font-size: 1.2vw;
 	background-color: white;
+	color: var(--llgrey);
 }
 
-.textOverImg p:hover {
+figcaption:hover {
 	color: var(--llpink);
 }
 
-#portfolio .textOverImg p {
+#portfolio figcaption {
 	padding: .8vw;
 	font-size: 2vw;
 }
