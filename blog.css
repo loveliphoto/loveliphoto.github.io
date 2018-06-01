@@ -2,7 +2,7 @@ body {
 	display: grid;
 	grid: "header header" 80vh
 		  "nav nav" 0vh
-		  "sidebar posts" auto
+		  "aside posts" auto
 		  "footer footer" auto
 		  / 1fr 4fr;
 }
@@ -94,8 +94,8 @@ h2 {
 	margin: 1rem;
 }
 
-#sidebar {
-	grid-area: sidebar;
+aside {
+	grid-area: aside;
 	background-color: #fff2f2;
 	padding-top: 1rem;
 	display: flex;
@@ -104,12 +104,12 @@ h2 {
 	align-items: center;
 }
 
-#sidebar > p {
+aside > p {
 	color: var(--llgrey);
 	font-size: 1.8vw;
 }
 
-#sidebar-icons {
+#aside-icons {
 	width: 70%;
 	display: flex;
 	flex-direction: row;
@@ -117,6 +117,6 @@ h2 {
 	align-items: center;
 }
 
-#sidebar-icons img {
+#aside-icons img {
 	width: 3.75vw;
 }
