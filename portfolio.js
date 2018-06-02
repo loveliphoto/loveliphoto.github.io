@@ -48,6 +48,18 @@ function initCarousel(carousel, pIndex) {
 	let t = 0;
 
 	for (let i = 0; i < START_INDEX[pIndex]; i++) {
+		t += photos[i].clientWidth;
+	}
+
+	t -= ((carousel.clientWidth - photos[START_INDEX[pIndex]].clientWidth) / 2);
+
+	tx.push([]);
+	for (let img of photos) {
+		img.addEventListener('transitionend', visible);
+		img.style.transform = 'translate3d(' + (-1) * t + 'px, 0, 0)';
+		tx[pIndex].push(t);
+	}
+}
 
 function visible(event) {
 	event.currentTarget.style.opacity = 1;
