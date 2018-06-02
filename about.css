@@ -13,15 +13,15 @@ body {
 }
 
 .center {
-	transform: translateX(-80vw);
+	transform: translate3d(-80vw, 0, 0);
 }
 
 .left {
-	transform: translateX(0vw);
+	transform: translate3d(0vw, 0, 0);
 }
 
 .right {
-	transform: translateX(-160vw);
+	transform: translate3d(-160vw, 0, 0);
 }
 
 #about {
