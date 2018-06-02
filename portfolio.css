@@ -30,12 +30,13 @@ li-portfolio {
 	overflow: hidden;
 	display: flex;
 	flex-direction: row;
-	justify-content: flex-start;
+	justify-content: center;
 	align-items: center;
 }
 
 .carousel > img {
 	height: inherit;
+	object-fit: cover;
 	transition: transform 0.8s ease;
 }
 
