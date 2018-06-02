@@ -1,3 +1,7 @@
+.portfolio-view {
+	overflow: hidden;
+}
+
 .portfolio-link {
 	position: relative;
 	margin: 0 3.2vw;
@@ -5,10 +9,6 @@
 	background: none;
 	font-weight: 300;
 	font-family: 'Lato', 'Verdana', sans-serif;
-}
-
-.portfolio-view {
-	overflow: hidden;
 }
 
 li-portfolio {
