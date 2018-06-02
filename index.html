@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="universal.css">
-	<link rel="stylesheet" type="text/css" href="LLClasses.css">
-	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" href="universal.css">
+	<link rel="stylesheet" href="LLClasses.css">
+	<link rel="stylesheet" href="index.css">
 	
-	<script type="text/javascript" src="nav.js"></script>
-	<link rel="stylesheet" type="text/css" href="nav.css">
+	<script src="nav.js"></script>
+	<link rel="stylesheet" href="nav.css">
+
+	<script src="portfolio.js"></script>
+	<link rel="stylesheet" href="portfolio.css">
 
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<link href="https://fonts.googleapis.com/css?family=Clicker+Script" rel="stylesheet">
@@ -112,12 +115,12 @@
 		<div class="center-above-down-button">
 			<div id="portfolioText"><p>CHECK OUT THE</p><h1>portfolio</h1></div>
 			<div id="portfolio-links">
-				<a href="#" class="img-link">
+				<button id="portfolio-seniors-button" class="portfolio-button">
 					<img src="16.jpg" class="large-pic">
 					<figure>
 						<figcaption>SENIORS</figcaption>
 					</figure>
-				</a>
+				</button>
 				<a href="#" class="img-link">
 					<img src="99.jpg" class="large-pic">
 					<figure>
@@ -136,6 +139,35 @@
 			<a href="#contactPage"><img src="downpink.png"></a>
 		</div>
 	</section>
+
+	<li-portfolio id="portfolio-seniors">
+		<div class="carousel">
+			<img src="portfolio/01.jpg">
+			<img src="portfolio/02.jpg">
+			<img src="portfolio/03.jpg">
+			<img src="portfolio/04.jpg">
+			<img src="portfolio/05.jpg">
+			<img src="portfolio/06.jpg">
+			<img src="portfolio/07.jpg">
+			<img src="portfolio/08.jpg">
+			<img src="portfolio/09.jpg">
+			<img src="portfolio/10.jpg">
+			<img src="portfolio/11.jpg">
+			<img src="portfolio/12.jpg">
+			<img src="portfolio/13.jpg">
+			<img src="portfolio/14.jpg">
+		</div>
+		
+		<button id="portfolio-x-button">x</button>
+
+		<div id="left-arrow-div">
+			<button id="left-arrow" class="arrow">&#8249;</button>
+		</div>
+
+		<div id="right-arrow-div">
+			<button id="right-arrow" class="arrow">&#8250;</button>
+		</div>
+	</li-portfolio>
 
 	<section id="contactPage">
 		<div class="center-above-down-button">

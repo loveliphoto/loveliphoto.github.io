@@ -1,11 +1,18 @@
 'use strict';
 
+class Portfolio extends HTMLElement {
+	constructor() {
+		super();
+	}
+}
+customElements.define('li-portfolio', Portfolio);
+
 let START_INDEX;
 let index;
 let tx = [];
 
 window.addEventListener('load', function(event) {
-	let carousel = document.getElementById('carousel');
+	let carousel = document.getElementById('portfolio-seniors').children[0];
 	let photos = carousel.children;
 
 	START_INDEX = Math.floor(photos.length / 2);
@@ -27,6 +34,8 @@ window.addEventListener('load', function(event) {
 
 	document.getElementById('left-arrow').addEventListener('click', scrollLeft);
 	document.getElementById('right-arrow').addEventListener('click', scrollRight);
+	document.getElementById('portfolio-seniors-button').addEventListener('click', togglePortfolio);
+	document.getElementById('portfolio-x-button').addEventListener('click', togglePortfolio);
 });
 
 function visible(event) {
@@ -35,7 +44,7 @@ function visible(event) {
 }
 
 function scrollLeft(event) {
-	let carousel = document.getElementById('carousel');
+	let carousel = document.getElementById('portfolio-seniors').children[0];
 	let photos = carousel.children;
 
 	let endIndex = index + photos.length - 1 - START_INDEX;
@@ -71,7 +80,7 @@ function scrollLeft(event) {
 }
 
 function scrollRight(event) {
-	let carousel = document.getElementById('carousel');
+	let carousel = document.getElementById('portfolio-seniors').children[0];
 	let photos = carousel.children;
 
 	let startIndex = index - START_INDEX;
@@ -104,4 +113,22 @@ function scrollRight(event) {
 	if (index >= photos.length) {
 		index %= photos.length;
 	}
+}
+
+function togglePortfolio(event) {
+	document.body.classList.toggle('portfolio-view');
+	let portfolio = document.getElementById('portfolio-seniors');
+
+	if (window.getComputedStyle(portfolio).zIndex == -1) {
+		portfolio.style.zIndex = 1;
+		portfolio.style.opacity = 1;
+	} else {
+		portfolio.style.opacity = 0;
+		portfolio.addEventListener('transitionend', zHide);
+	}
+}
+
+function zHide(event) {
+	event.target.style.zIndex = -1;
+	event.target.removeEventListener('transitionend', zHide);
 }

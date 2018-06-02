@@ -1,35 +1,49 @@
-body {
+.portfolio-button {
 	position: relative;
+	margin: 0 3.2vw;
+	border: none;
+	background: none;
+	font-weight: 300;
+	font-family: 'Lato', 'Verdana', sans-serif;
 }
 
-header {
-	background-color: white;
-	background-size: cover;
-	display: flex;
-	flex-flow: column nowrap;
-	justify-content: center;
-	align-items: flex-start;
-	height: 15vh;
-}
-
-header > h2 {
-	position: relative;
-	left: 5rem;
-}
-
-#carousel {
-	width: 100vw;
-	height: 100vh;
+.portfolio-view {
 	overflow: hidden;
+}
+
+li-portfolio {
+	display: block;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	height: 100vh;
 	background-color: var(--llgrey);
+	transition: opacity 0.8s ease;
+	z-index: -1;
+	opacity: 0;
+}
+
+.carousel {
+	height: inherit;
+	overflow: hidden;
 	display: flex;
 	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
 }
 
-#carousel > img {
-	height: 100vh;
+.carousel > img {
+	height: inherit;
 	transition: transform 0.8s ease;
-	opacity: 0;
+}
+
+#portfolio-x-button {
+	position: absolute;
+	top: 5%;
+	left: 5%;
+	font-size: 5vw;
 }
 
 #left-arrow-div {
