@@ -18,6 +18,11 @@ window.addEventListener('load', function(event) {
 		initCarousel(carousels[pIndex], pIndex);
 	}
 
+	let portfolioLinks = document.querySelectorAll('.portfolio-link');
+	for (let link of portfolioLinks) {
+		link.addEventListener('click', openPortfolio);
+	}
+
 	let xButtons = document.querySelectorAll('.portfolio-x-button');
 	for (let button of xButtons) {
 		button.addEventListener('click', closePortfolio);
@@ -31,11 +36,6 @@ window.addEventListener('load', function(event) {
 	let rightArrows = document.querySelectorAll('.portfolio-right-arrow-div');
 	for (let arrow of rightArrows) {
 		arrow.firstElementChild.addEventListener('click', scrollRight);
-	}
-
-	let portfolioLinks = document.querySelectorAll('.portfolio-link');
-	for (let link of portfolioLinks) {
-		link.addEventListener('click', openPortfolio);
 	}
 });
 
@@ -65,8 +65,6 @@ function visible(event) {
 	event.currentTarget.style.opacity = 1;
 	event.currentTarget.removeEventListener('transitionend', visible);
 }
-
-
 
 function openPortfolio(event) {
 	document.body.classList.toggle('portfolio-view');
