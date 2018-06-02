@@ -1,38 +1,51 @@
-body {
-	position: relative;
-}
-
-header {
-	background-color: white;
-	background-size: cover;
-	display: flex;
-	flex-flow: column nowrap;
-	justify-content: center;
-	align-items: flex-start;
-	height: 15vh;
-}
-
-header > h2 {
-	position: relative;
-	left: 5rem;
-}
-
-#carousel {
-	width: 100vw;
-	height: 100vh;
+.portfolio-view {
 	overflow: hidden;
-	background-color: var(--llgrey);
-	display: flex;
-	flex-direction: row;
 }
 
-#carousel > img {
+.portfolio-link {
+	position: relative;
+	margin: 0 3.2vw;
+	border: none;
+	background: none;
+	font-weight: 300;
+	font-family: 'Lato', 'Verdana', sans-serif;
+}
+
+li-portfolio {
+	display: block;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
 	height: 100vh;
-	transition: transform 0.8s ease;
+	background-color: var(--llgrey);
+	transition: opacity 0.8s ease;
+	z-index: -1;
 	opacity: 0;
 }
 
-#left-arrow-div {
+.carousel {
+	height: inherit;
+	overflow: hidden;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.carousel > img {
+	height: inherit;
+	transition: transform 0.8s ease;
+}
+
+.portfolio-x-button {
+	position: absolute;
+	top: 5%;
+	right: 5%;
+}
+
+.portfolio-left-arrow-div {
 	position: absolute;
 	top: 0;
 	bottom: 0;
@@ -43,7 +56,7 @@ header > h2 {
 	align-items: center;
 }
 
-#right-arrow-div {
+.portfolio-right-arrow-div {
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -54,6 +67,6 @@ header > h2 {
 	align-items: center;
 }
 
-.arrow {
+.portfolio-button {
 	font-size: 5vw;
 }

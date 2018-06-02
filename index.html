@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="universal.css">
-	<link rel="stylesheet" type="text/css" href="LLClasses.css">
-	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" href="universal.css">
+	<link rel="stylesheet" href="LLClasses.css">
+	<link rel="stylesheet" href="index.css">
 	
-	<script type="text/javascript" src="nav.js"></script>
-	<link rel="stylesheet" type="text/css" href="nav.css">
+	<script src="nav.js"></script>
+	<link rel="stylesheet" href="nav.css">
+
+	<script src="portfolio.js"></script>
+	<link rel="stylesheet" href="portfolio.css">
 
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<link href="https://fonts.googleapis.com/css?family=Clicker+Script" rel="stylesheet">
@@ -60,7 +63,7 @@
 		</div>
 	</nav>
 
-	<div id="welcome">
+	<section id="welcome">
 		<div id="welcome-text">
 			<h1>hello, friend!</h1>
 			<p>Welcome to our little corner of the internet. We're Ben and Betty Li: photographers, storytellers, teachers based in Madison, Wisconsin. By day, we hustle. By night, we dream. All for this, to live our best lives. 
@@ -74,56 +77,99 @@
 		<div id="four-pics">
 			<a href="about.html" class="img-link">
 				<img src="betty-ben.jpg" class="small-pic">
-				<div class="textOverImg"><p>MEET THE LIs</p></div>
+				<figure>
+					<figcaption>MEET THE LIs</figcaption>
+				</figure>
 			</a>
 			<a href="#portfolio" class="img-link">
 				<img src="65.jpg" class="small-pic">
-				<div class="textOverImg"><p>SEE OUR WORK</p></div>
+				<figure>
+					<figcaption>SEE OUR WORK</figcaption>
+				</figure>
 			</a>
 			<a href="blog.html" class="img-link">
 				<img src="33.jpg" class="small-pic">
-				<div class="textOverImg"><p>READ OUR BLOG</p></div>
+				<figure>
+					<figcaption>READ OUR BLOG</figcaption>
+				</figure>
 			</a>
 			<a href="#contactPage" class="img-link">
 				<img src="62.jpg" class="small-pic">
-				<div class="textOverImg"><p>GET IN TOUCH</p></div>
+				<figure>
+					<figcaption>GET IN TOUCH</figcaption>
+				</figure>
 			</a>
 		</div>
-	</div>
+	</section>
 
-	<div id="testimonial">
+	<section id="testimonial">
 		<p><b>"Ben and Betty Li were a joy to work with. <br>We're in love with every single photo!"<br></b>&mdash; Ben and Betty
 			<br>
 		<a href="#" class="moreButton">LEARN MORE <span>&#8250;</span></a></p>
 		<div class="down-button">
 			<a href="#portfolio"><img src="downwhite.png"></a>
 		</div>
-	</div>
+	</section>
 
-	<div id="portfolio">
+	<section id="portfolio">
 		<div class="center-above-down-button">
 			<div id="portfolioText"><p>CHECK OUT THE</p><h1>portfolio</h1></div>
 			<div id="portfolio-links">
-				<a href="#" class="img-link">
+				<button class="portfolio-link">
 					<img src="16.jpg" class="large-pic">
-					<div class="textOverImg"><p>SENIORS</p></div>
-				</a>
-				<a href="#" class="img-link">
+					<figure>
+						<figcaption>SENIORS</figcaption>
+					</figure>
+				</button>
+				<button class="portfolio-link">
 					<img src="99.jpg" class="large-pic">
-					<div class="textOverImg"><p>COUPLES</p></div>
-				</a>
-				<a href="#" class="img-link">
+					<figure>
+						<figcaption>COUPLES</figcaption>
+					</figure>
+				</button>
+				<button class="portfolio-link">
 					<img src="betty-ben.jpg" class="large-pic">
-					<div class="textOverImg"><p>WEDDINGS</p></div>
-				</a>
+					<figure>
+						<figcaption>WEDDINGS</figcaption>
+					</figure>
+				</button>
 			</div>
 		</div>
 		<div class="down-button">
 			<a href="#contactPage"><img src="downpink.png"></a>
 		</div>
-	</div>
+	</section>
 
-	<div id="contactPage">
+	<li-portfolio>
+		<div class="carousel">
+			<img src="portfolio/01.jpg">
+			<img src="portfolio/02.jpg">
+			<img src="portfolio/03.jpg">
+			<img src="portfolio/04.jpg">
+			<img src="portfolio/05.jpg">
+			<img src="portfolio/06.jpg">
+			<img src="portfolio/07.jpg">
+			<img src="portfolio/08.jpg">
+			<img src="portfolio/09.jpg">
+			<img src="portfolio/10.jpg">
+			<img src="portfolio/11.jpg">
+			<img src="portfolio/12.jpg">
+			<img src="portfolio/13.jpg">
+			<img src="portfolio/14.jpg">
+		</div>
+		
+		<button class="portfolio-x-button portfolio-button">x</button>
+
+		<div class="portfolio-left-arrow-div">
+			<button class="portfolio-button">&#8249;</button>
+		</div>
+
+		<div class="portfolio-right-arrow-div">
+			<button class="portfolio-button">&#8250;</button>
+		</div>
+	</li-portfolio>
+
+	<section id="contactPage">
 		<div class="center-above-down-button">
 			<h4>say hello!</h4>
 			<form id="contact-form">
@@ -141,11 +187,11 @@
 		<div class="down-button">
 			<a href="#bottom"><img src="downwhite.png"></a>
 		</div>
-	</div>
+	</section>
 
-	<div id="bottom">
+	<section id="bottom">
 		<h2>FOLLOW ALONG ON INSTA!</h2>
-	</div>
+	</section>
 
 	<footer>&copy; LOVE LI PHOTOGRAPHY 2018. PROUDLY DESIGNED AND CODED BY BEN & BETTY LI</footer>
 </body>
