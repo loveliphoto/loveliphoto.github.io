@@ -46,8 +46,9 @@ aside > img {
 aside > div {
 	position: absolute;
 	bottom: 10vh;
-	width: 30vw;
+	width: 50vw;
 	height: 80vh;
+	padding: 2vw;
 	background-color: white;
 	display: flex;
 	flex-flow: column nowrap;
