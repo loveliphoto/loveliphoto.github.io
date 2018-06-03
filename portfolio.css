@@ -42,9 +42,8 @@ li-portfolio {
 
 .portfolio-x-button {
 	position: absolute;
-	top: 2%;
-	right: 2%;
-	font-family: 'Lato', 'Verdana', sans-serif;
+	top: 0;
+	right: 0;
 }
 
 .portfolio-left-arrow-div {
@@ -56,7 +55,6 @@ li-portfolio {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	font-family: 'Lato', 'Verdana', sans-serif;
 }
 
 .portfolio-right-arrow-div {
@@ -68,9 +66,10 @@ li-portfolio {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	font-family: 'Lato', 'Verdana', sans-serif;
 }
 
 .portfolio-button {
 	font-size: 5vw;
+	font-family: 'Lato', 'Verdana', sans-serif;
+	z-index: 1;
 }
