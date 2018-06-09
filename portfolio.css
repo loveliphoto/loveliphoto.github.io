@@ -93,6 +93,16 @@ li-portfolio {
 	vertical-align: -1rem;
 }
 
+.portfolio-left-arrow-div .portfolio-arrow {
+	position: relative;
+	right: .25rem;
+}
+
+.portfolio-right-arrow-div .portfolio-arrow {
+	position: relative;
+	left: .25rem;
+}
+
 .portfolio-button > span:hover {
 	color: var(--llpink);
 }
