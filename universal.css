@@ -28,6 +28,10 @@ button, input, textarea {
     outline: none;
 }
 
+textarea {
+	resize: none;
+}
+
 button, input[type="submit"] {
 	cursor: pointer;
 }
