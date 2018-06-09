@@ -95,7 +95,7 @@ h2 {
 
 aside {
 	grid-area: aside;
-	background-color: #fff2f2;
+	background-color: white;
 	padding-top: 1rem;
 	display: flex;
 	flex-flow: column nowrap;
