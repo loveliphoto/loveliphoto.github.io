@@ -212,6 +212,7 @@ figcaption:hover {
 
 #contact-form > textarea {
 	width: 30vw;
+	height: 30vh;
 	margin-top: 0.8vw;
 	padding: 0.5vw;
 	border: none;
