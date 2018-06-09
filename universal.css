@@ -75,6 +75,14 @@ a:visited {
 	color: var(--llgrey);
 }
 
+main {
+	grid-area: main;
+}
+
+aside {
+	grid-area: aside;
+}
+
 footer {
 	grid-area: footer;
 	width: 100vw;
