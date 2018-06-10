@@ -75,6 +75,27 @@ a:visited {
 	color: var(--llgrey);
 }
 
+figure {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+figcaption {
+	margin: 0;
+	color: var(--llgrey);
+	background-color: white;
+	text-align: center;
+}
+
 main {
 	grid-area: main;
 }
