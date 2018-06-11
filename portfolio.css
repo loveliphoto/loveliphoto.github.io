@@ -95,12 +95,12 @@ li-portfolio {
 
 .portfolio-left-arrow-div .portfolio-arrow {
 	position: relative;
-	right: .25rem;
+	right: .2rem;
 }
 
 .portfolio-right-arrow-div .portfolio-arrow {
 	position: relative;
-	left: .25rem;
+	left: .2rem;
 }
 
 .portfolio-button > span:hover {
