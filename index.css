@@ -87,6 +87,7 @@ section {
 
 #testimonial {
 	position: relative;
+	height: 100vh;
 	background-image: url("engagement.jpg");
 	background-size: cover;
 	background-attachment: fixed;
@@ -215,6 +216,7 @@ figcaption:hover {
 #bottom {
 	background-image: url("1.jpg");
 	background-size: cover;
+	height: 100vh;
 	background-attachment: fixed;
 	display: flex;
 	flex-direction: column;
